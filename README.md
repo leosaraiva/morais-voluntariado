@@ -1,13 +1,19 @@
 Especificação do Projeto
 
 Disciplina: Linguagem de Programação II.
+
 Professoras: Dra. Alana Morais
+
 Dra. Aline Morais
 
 Equipe:
+
 Eli Veloso
+
 Leonardo Saraiva
+
 Lucas Miranda
+
 
 Descrição
 
