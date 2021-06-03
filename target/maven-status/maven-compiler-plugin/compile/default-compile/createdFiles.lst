@@ -11,6 +11,7 @@ view\TelaGestor_bkp$6.class
 view\TelaVoluntario$8.class
 model\Utils.class
 view\TelaVoluntario$1.class
+view\TelaGestor$13.class
 view\TelaGestor_bkp.class
 view\TelaLogin$2.class
 view\TelaGestor$10.class
@@ -46,6 +47,7 @@ view\TelaLogin_multi.class
 view\TelaVoluntario$9.class
 view\TelaGestor$7.class
 view\TelaGestor_bkp$5.class
+view\TelaGestor$12.class
 model\Empresa.class
 model\Evento.class
 view\TelaLogin_multi$2.class

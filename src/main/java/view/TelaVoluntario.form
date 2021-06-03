@@ -3,6 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -73,7 +74,7 @@
                           <Component id="btnInserirReceita" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="btnInserirDespesa" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="151" max="32767" attributes="0"/>
+                      <EmptySpace pref="160" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -100,7 +101,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="receitasLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" value="DINHEIRO"/>
+                <Property name="text" type="java.lang.String" value="Dinheiro"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="receitasText">
@@ -113,7 +114,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="despesasLabel">
               <Properties>
-                <Property name="text" type="java.lang.String" value="ALIMENTO"/>
+                <Property name="text" type="java.lang.String" value="Alimentos"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btnInserirReceita">
@@ -155,16 +156,14 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jspEvento" alignment="1" min="-2" pref="227" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jlevento" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txEvento" min="-2" pref="227" max="-2" attributes="0"/>
-                          </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="jlevento" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="2" attributes="0">
+                          <Component id="jspEvento" alignment="2" min="-2" pref="227" max="-2" attributes="0"/>
+                          <Component id="txEvento" alignment="2" min="-2" pref="227" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Component id="jbconsultarEvento" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   </Group>
@@ -189,7 +188,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jlevento">
               <Properties>
-                <Property name="text" type="java.lang.String" value="EVENTOS"/>
+                <Property name="text" type="java.lang.String" value="Eventos"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txEvento">
@@ -232,9 +231,9 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Component id="jlTrabalho" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="jlTrabalho" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="txTrabalho" max="32767" attributes="0"/>
                           <Component id="jspTrabalho" min="-2" pref="227" max="-2" attributes="0"/>
@@ -244,7 +243,7 @@
                           <Component id="jbconsultarTrabalho" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jbAceitarTrabalho" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -270,7 +269,7 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jlTrabalho">
               <Properties>
-                <Property name="text" type="java.lang.String" value="TRABALHO"/>
+                <Property name="text" type="java.lang.String" value="Trabalho"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txTrabalho">

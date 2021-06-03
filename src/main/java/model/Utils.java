@@ -30,6 +30,8 @@ public class Utils {
       usuarios.add(user);
       Usuarios user2 = new Usuarios("leo", "abc", "voluntario");
       usuarios.add(user2);
+      Usuarios user3 = new Usuarios("lucas", "abc", "funcionario");
+      usuarios.add(user3);
   }  
   
    public Usuarios checkLogin (String usuario){
@@ -41,10 +43,7 @@ public class Utils {
             if (usuario.equals(u.getUsuario())){
                 return (u);
             }
-            
-        else {
-                return null;
-            }    
+   
     }
     return null;
     }

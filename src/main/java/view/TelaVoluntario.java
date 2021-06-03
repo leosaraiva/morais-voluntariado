@@ -60,8 +60,9 @@ Utils util = Utils.getInstancia();
         jbAceitarTrabalho = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
-        receitasLabel.setText("DINHEIRO");
+        receitasLabel.setText("Dinheiro");
 
         receitasText.setToolTipText("R$");
         receitasText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -70,7 +71,7 @@ Utils util = Utils.getInstancia();
             }
         });
 
-        despesasLabel.setText("ALIMENTO");
+        despesasLabel.setText("Alimentos");
 
         btnInserirReceita.setText("Doar");
         btnInserirReceita.addActionListener(new java.awt.event.ActionListener() {
@@ -110,7 +111,7 @@ Utils util = Utils.getInstancia();
                 .addGroup(jpDoarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnInserirReceita)
                     .addComponent(btnInserirDespesa))
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addContainerGap(160, Short.MAX_VALUE))
         );
         jpDoarLayout.setVerticalGroup(
             jpDoarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +131,7 @@ Utils util = Utils.getInstancia();
 
         jTabbedPane1.addTab("DOAÇÕES", jpDoar);
 
-        jlevento.setText("EVENTOS");
+        jlevento.setText("Eventos");
 
         jbconsultarEvento.setText("Consultar");
         jbconsultarEvento.addActionListener(new java.awt.event.ActionListener() {
@@ -148,14 +149,13 @@ Utils util = Utils.getInstancia();
         jpEventoLayout.setHorizontalGroup(
             jpEventoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpEventoLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jpEventoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(20, 20, 20)
+                .addComponent(jlevento)
+                .addGap(11, 11, 11)
+                .addGroup(jpEventoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jspEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jpEventoLayout.createSequentialGroup()
-                        .addComponent(jlevento)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                    .addComponent(txEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
                 .addComponent(jbconsultarEvento)
                 .addGap(11, 11, 11))
         );
@@ -174,7 +174,7 @@ Utils util = Utils.getInstancia();
 
         jTabbedPane1.addTab("EVENTOS", jpEvento);
 
-        jlTrabalho.setText("TRABALHO");
+        jlTrabalho.setText("Trabalho");
 
         txTrabalho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,9 +205,9 @@ Utils util = Utils.getInstancia();
         jpTrabalhoLayout.setHorizontalGroup(
             jpTrabalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpTrabalhoLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jlTrabalho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(10, 10, 10)
+                .addGap(18, 18, 18)
+                .addComponent(jlTrabalho)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jpTrabalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txTrabalho)
                     .addComponent(jspTrabalho, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -215,7 +215,7 @@ Utils util = Utils.getInstancia();
                 .addGroup(jpTrabalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jbconsultarTrabalho)
                     .addComponent(jbAceitarTrabalho))
-                .addGap(11, 11, 11))
+                .addGap(18, 18, 18))
         );
         jpTrabalhoLayout.setVerticalGroup(
             jpTrabalhoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

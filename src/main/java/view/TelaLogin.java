@@ -10,7 +10,7 @@ import model.Utils;
 
 /**
  *
- * @author ELI
+ * @author ELI / Leo
  */
 public class TelaLogin extends javax.swing.JFrame {
 
@@ -40,6 +40,7 @@ public class TelaLogin extends javax.swing.JFrame {
         senhaText = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         usulabel.setText("USUÁRIO");
 
@@ -59,27 +60,19 @@ public class TelaLogin extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(147, 147, 147)
-                        .addComponent(usulabel))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(151, 151, 151)
-                        .addComponent(senhaLabel))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(137, 137, 137)
-                        .addComponent(btnLogin))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(usuText, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
-                            .addComponent(senhaText))))
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addGap(138, 138, 138)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(usuText, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
+                    .addComponent(usulabel)
+                    .addComponent(senhaLabel)
+                    .addComponent(btnLogin)
+                    .addComponent(senhaText))
+                .addContainerGap(138, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(77, 77, 77)
+                .addGap(73, 73, 73)
                 .addComponent(usulabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(usuText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -89,7 +82,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addComponent(senhaText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnLogin)
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -122,13 +115,13 @@ public class TelaLogin extends javax.swing.JFrame {
         }
         if (util.login(usuText.getText(), myPass).equals("gestor")){
             String funcao = util.login(usuText.getText(), myPass);
-            TelaGestor_bkp frm = new TelaGestor_bkp(); //funcao do usuario como atributo da tela
+            TelaGestor frm = new TelaGestor(); //funcao do usuario como atributo da tela
             frm.setVisible(true);
             dispose();
         }
         if (util.login(usuText.getText(), myPass).equals("funcionario")){
             String funcao = util.login(usuText.getText(), myPass);
-            TelaGestor_bkp frm = new TelaGestor_bkp(); //funcao do usuario como atributo da tela
+            TelaGestor frm = new TelaGestor(); //funcao do usuario como atributo da tela
             frm.setVisible(true);
             dispose();
         }
@@ -152,7 +145,7 @@ public class TelaLogin extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
