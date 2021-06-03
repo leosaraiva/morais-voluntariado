@@ -66,12 +66,12 @@ public class Evento {
 	}
 	
 	
-	//Método
+	//Mï¿½todo
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Nome do Evento: " + this.nome + "\n");
 		sb.append("Data do evento: " + this.dataEvento + "\n");
-		sb.append("Duração: " + this.duracao + "\n");
+		sb.append("DuraÃ§Ã£o: " + this.duracao + "\n");
 		sb.append("Custo: " + this.custosEvento + "\n");
 		sb.append("Vagas: " + this.vagas);
 		return sb.toString();

@@ -8,7 +8,7 @@ public class Utils {
     
     public ArrayList<Usuarios> usuarios  = new ArrayList<Usuarios>();
      public ArrayList<Funcionario> funcionarios  = new ArrayList<Funcionario>();
-    
+     
      // Constructor
 	private Utils() {
 	}
@@ -27,16 +27,18 @@ public class Utils {
   public void memoria(){
       
       Usuarios user = new Usuarios("eli", "123", "gestor");
-      usuarios.add(user); 
+      usuarios.add(user);
+      Usuarios user2 = new Usuarios("leo", "abc", "voluntario");
+      usuarios.add(user2);
   }  
   
    public Usuarios checkLogin (String usuario){
         
-        Utils util = Utils.getInstancia();
         
-        for (Usuarios u: util.usuarios){
+        
+        for (Usuarios u: this.usuarios){
             
-            if (u.getUsuario().equalsIgnoreCase(usuario)){
+            if (usuario.equals(u.getUsuario())){
                 return (u);
             }
             
@@ -53,10 +55,13 @@ public class Utils {
             Usuarios user = checkLogin(usuario);
            
             if (user != null){
+            
+            if(user.getUsuario().equals(usuario) && user.getSenha().equals(senha)){
+                return user.getPermissao();
                 
-                if (user.getSenha().equals(senha))
-                    
-                    return user.getPermissao();
+                          
+            }
+                
                             
             }
            return "erro";       

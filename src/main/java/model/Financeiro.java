@@ -40,5 +40,18 @@ public class Financeiro {
 		return str;
 		
 	}
-		
-}
+        
+        public double controleReceita(double valor){
+            receita = this.getReceita() + valor;
+            this.setReceita(receita);
+            return receita;
+        }    
+        public double controleDespesa(double valor){
+            despesa = this.getDespesa() + valor;
+            this.setDespesa(despesa);
+            return despesa;
+        }
+        
+        
+    }
+			
