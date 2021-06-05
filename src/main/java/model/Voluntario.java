@@ -6,14 +6,23 @@ public class Voluntario extends Pessoa{
 
     // atributos
     private String disponibilidadeVoluntario;
+     public String matricula;
 
-
-    // construtores
-    public Voluntario(String nome, String endereco, String telefone, String email, String cpf, String dataNascimento, String disponibilidadeVoluntario) {
+    // construtoresstring 
+    public Voluntario(String nome, String endereco, String telefone, String email, String cpf, String dataNascimento, String disponibilidadeVoluntario,String matricula ) {
         super(nome, endereco, telefone, email, cpf, dataNascimento);
         this.disponibilidadeVoluntario = disponibilidadeVoluntario;
+        this.matricula = matricula;
     }
     public Voluntario(){}
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
 
     // metodos
 
@@ -26,9 +35,15 @@ public class Voluntario extends Pessoa{
         this.disponibilidadeVoluntario = disponibilidadeVoluntario;
     }
 
-    public void buscarEvento(){
+ //   public Evento buscarEvento(String palavraChave){
+ //       for (Evento ev : Evento().eventos){
+ //           if (ev.contains(palavraChave)){
+ //                 return ev;
+  //          }
+   //         else {return null;}
+    //    }
 
-    }
+   // }
 
     public void aceitarTrabalho(){
 
@@ -41,5 +56,6 @@ public class Voluntario extends Pessoa{
     public void doarAlimento(){
     
     }
+    
 
 }

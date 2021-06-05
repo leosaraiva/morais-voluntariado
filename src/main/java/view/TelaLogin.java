@@ -121,7 +121,7 @@ public class TelaLogin extends javax.swing.JFrame {
         }
         if (util.login(usuText.getText(), myPass).equals("funcionario")){
             String funcao = util.login(usuText.getText(), myPass);
-            TelaGestor frm = new TelaGestor(); //funcao do usuario como atributo da tela
+            TelaFuncionario frm = new TelaFuncionario(); //funcao do usuario como atributo da tela
             frm.setVisible(true);
             dispose();
         }
